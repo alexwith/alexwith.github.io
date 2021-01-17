@@ -189,6 +189,11 @@ pre code {
   color: #2dd68f;
 }
 
+.server-icon {
+  width: 100px;
+  object-fit: fill;
+}
+
 /* Pygments via Jekyll */
 .highlight {
   margin-bottom: 1rem;
