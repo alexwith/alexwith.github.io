@@ -1,37 +1,67 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Alex With</title>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  <link rel="stylesheet" href="styles/hyde.css">
+  <link rel="stylesheet" href="styles/poole.css">
+  <link rel="stylesheet" href="styles/syntax.css">
+</head>
 
-    {{ post.content }}
+<body class="layout-reverse">
+  <div class="sidebar">
+    <div class="container sidebar-sticky">
+      <div class="sidebar-about">
+        <h1>Alex With</h1>
+        <p>Hey! I'm Alex, some software developer. You can view my work here.</p>
+        <br />
+        <p><span style="color: #fff; font-weight: bold;">Info</span><br>&bullet; Oslo, Norway <span
+            style="color: white;">(GMT +1)</span><br>&bullet;
+          GitHub <a href="https://github.com/alexwith/">alexwith</a>
+          & <a href="https://github.com/hyfe-dev/">hyfe-dev</a></p>
+      </div>
+    </div>
+    <div class="container sidebar-sticky footer">
+      <p>&copy; 2020 alexwith</p>
+    </div>
   </div>
-  {% endfor %}
-</div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  <div class="content container">
+    <div class="page">
+      <h1>About me</h1>
+      <p>I'm a software developer with a passion for <span class="green-highlight">innovating</span> and
+        <span class="green-highlight">learning</span>, I always love a
+        <span class="green-highlight">good challenge</span>. I have a dream of leading big open source projects in the
+        future.
+      </p>
+      <p>If you wish to contact me, please add me on discord. This is my username, <code><a>Hyfe#2154</a></code></p>
+
+      <h1>Experience</h1>
+      <p>Here are some of my more notable positions.</p>
+      <ul class="green-highlight">
+        <li>ExodusPrisons / PrisonPop - Developer - (4 months)</li>
+        <code
+          style="color: #515151;">Expanded my skills working on a variety of challenging projects and learning from senior developers.</code>
+        <li>AkumaMC - Developer - (January 2021 - Present)</li>
+        <code
+          style="color: #515151;">A flexible position where I am involved in network wide decisions based on my past experience and guiding junior developers.</code>
+        <li">MinoWars - Developer - (January 2021 - Present)</li>
+          <code
+            style="color: #515151;">A lead developer role where I take on some of the most challenging projects required to be done by a reliable developer.</code>
+      </ul>
+
+      <h1>Projects</h1>
+      <p>Below are my biggest og most popular projects.</p>
+      <h3>BattlePass</h3>
+      <p><a href="https://www.spigotmc.org/resources/battlepass-practical-customizable.63076/">BattlePass</a> is a
+        premium and <a href="https://github.com/titanlabs-mc/battle-pass">open source</a> project based on the Fortnite
+        Battle Pass, with 1.1k+ purchases and 75+ five star reviews.</p>
+    </div>
+  </div>
+</body>
+
+</html>
