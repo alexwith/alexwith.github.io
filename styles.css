@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #18181b;
+  --text: #d4d4d8;
+  --blue: #0ea5e9;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  padding: 5rem;
+  user-select: none;
+}
+
+.heading {
+
+}
+
+.heading h1 {
+  color: var(--blue);
+  font-size: 3rem;
+}
+
+.heading p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.highlight {
+  color: var(--blue);
+  background-color: rgba(14, 165, 233, 0.2);;
+  padding-inline: 0.25rem;
+  text-decoration: none;
+}
+
+.projects {
+  margin-top: 5rem;
+}
+
+.projects h1 {
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.projects p:first-child {
+  margin-bottom: 1rem;
+}
+
+.project-text {
+  max-width: 30rem;
+  font-size: 1rem;
+  border-left: 4px solid var(--blue);
+  padding-left: 1rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
