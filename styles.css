@@ -3,7 +3,9 @@
 :root {
   --bg: #18181b;
   --text: #d4d4d8;
-  --blue: #0ea5e9;
+  --blue: 14, 165, 233;
+  --green: 14, 233, 61;
+  --red: 255, 41, 80;
 }
 
 * {
@@ -19,12 +21,31 @@ body {
   user-select: none;
 }
 
-.heading {
+.color-bg-blue {
+  color: rgb(var(--blue));
+  background-color: rgba(var(--blue), 0.1);
+}
 
+.color-bg-green {
+  color: rgb(var(--green));
+  background-color: rgba(var(--green), 0.1);
+}
+
+.color-bg-red {
+  color: rgb(var(--red));
+  background-color: rgba(var(--red), 0.1);
+}
+
+.border-color-green {
+  border-left: 4px solid rgb(var(--green));
+}
+
+.border-color-red {
+  border-left: 4px solid rgb(var(--red));
 }
 
 .heading h1 {
-  color: var(--blue);
+  color: rgb(var(--blue));
   font-size: 3rem;
 }
 
@@ -33,9 +54,7 @@ body {
   line-height: 2rem;
 }
 
-.highlight {
-  color: var(--blue);
-  background-color: rgba(14, 165, 233, 0.2);;
+.highlight {  
   padding-inline: 0.25rem;
   text-decoration: none;
 }
@@ -46,7 +65,7 @@ body {
 
 .projects h1 {
   margin-bottom: 1rem;
-  color: var(--blue);
+  color: rgb(var(--blue));
 }
 
 .projects p:first-child {
@@ -56,7 +75,6 @@ body {
 .project-text {
   max-width: 30rem;
   font-size: 1rem;
-  border-left: 4px solid var(--blue);
   padding-left: 1rem;
 }
 
